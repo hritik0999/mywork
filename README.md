@@ -28,16 +28,6 @@ Open `http://localhost:4200`. Use the login screen with mock credentials:
 npm run build
 ```
 
-Output is in `dist/workflow-dashboard`.
-
-### Tests
-
-```bash
-npm test
-```
-
----
-
 ## Architectural decisions
 
 ### Feature-based structure
@@ -107,11 +97,4 @@ State flow: User action → Component dispatches action → Effect calls `Workfl
 
 - **Dark/Light theme:** `ThemeService` and toggle in header; preference stored in `localStorage` and applied via `data-theme` and CSS variables.
 - **Accessibility:** ARIA labels on chart, pagination, buttons, and error toast; semantic nav and main landmarks.
-- **Unit tests:** Jasmine/Karma are configured; run with `npm test`. Add tests for guards, services, and components as needed.
-- **E2E:** Not added; you can add Cypress or Playwright and point at the same routes and login flow.
 
----
-
-## Optional: Deployed URL
-
-If you deploy (e.g. Vercel, Netlify, or your own server), add the URL here.
